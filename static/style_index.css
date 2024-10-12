@@ -56,7 +56,7 @@ body {
 
 .text_h1{
   font-family: 'Codec Pro', sans-serif;
-  font-size: 50px;
+  font-size: 110px;
   color: #bdf347;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -84,7 +84,7 @@ body {
 .text_lead{
   font-family: 'Codec Pro', sans-serif;
   color: white;
-  text-align: justify;
+  text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-size: 20px;
   animation: 2s anim-lineUp ease-out;

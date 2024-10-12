@@ -13,13 +13,13 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #1d2549;
-  background-color: #bdf347;
-  border: 1px solid #bdf347;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  background-color: transparant;
+  border: 1px solid white;
   font-family: 'Codec Pro', sans-serif;
   font-size: 20px;
-  border-radius: 0px;
-  text-align: center;
+  border-radius: 5px;
   animation: 2s anim-lineUp ease-out;
 }
 
@@ -46,19 +46,15 @@ html,
 body {
   height: 100%;
   width:100%;
-  background-image: url("a.png"); 
   background-color: #1d2549;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
 }
 
 
 .text_h1{
   font-family: 'Codec Pro', sans-serif;
-  font-size: 50px;
+  font-size: 90px;
   color: #bdf347;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   animation: 2s anim-lineUp ease-out;
 }
@@ -84,14 +80,14 @@ body {
 .text_lead{
   font-family: 'Codec Pro', sans-serif;
   color: white;
-  text-align: justify;
+  text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-size: 20px;
   animation: 2s anim-lineUp ease-out;
 }
 
 .preview{
-text-align: right;}
+text-align: center;}
 
 .animation {
   height:60px;
@@ -101,13 +97,13 @@ text-align: right;}
   }
 
 .animation > div > div {
-  height: 3rem;
-  margin-bottom: 3rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
   display:inline-block;
 }
 
 .animation div:first-child {
-  animation: text-animation 20s infinite;
+  animation: text-animation 12s infinite;
 }
 
 .first div {
@@ -138,12 +134,12 @@ text-align: right;}
 @keyframes text-animation {
   0% {margin-top: 0;}
   10% {margin-top: 0;}
-  20% {margin-top: -6rem;}
-  30% {margin-top: -6rem;}
-  40% {margin-top: -12rem;}
-  60% {margin-top: -12rem;}
-  70% {margin-top: -6rem;}
-  80% {margin-top: -6rem;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 }

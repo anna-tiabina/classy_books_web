@@ -10,10 +10,10 @@
    
     
 
-    <title>About us</title>
+    <title>Recommendation</title>
        <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
 
-     <link rel="stylesheet" href="{{url_for('static', filename ='style.css')}}">
+     <link rel="stylesheet" href="{{url_for('static', filename ='style4.css')}}">
 
 
 
@@ -55,17 +55,21 @@
           </div>
 
           <div class="inner cover">
-            <h1 class="text_h1">Reach us</h1>
-
-            <p class="text_lead">
-              If you have questions or want to become our partner, please, contact us through our email - contact@classy_books.com.
-
-            </p>
+           
+           
+           </br>
+          <p class="preview">
+          <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%" src={{book_link}} ></iframe>
+             </p>
             <br>
+            <br>
+           <p class="text_lead">
+           The Machine Learning algorithm recommends you to read "{{book_name}}". We hope that this book will suit you and broaden your horizons.
+
+</p> 
+          
             
-            <p class="lead">
-              <a href="http://127.0.0.1:5000/form" class="btn-lg btn-default">explore</a>
-            </p>
+
           </div>
 
           
