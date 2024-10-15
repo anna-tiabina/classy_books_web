@@ -2,10 +2,15 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
 
+
+/*
+ * Base structure
+ */
+
 body {
   width: 100%;
   min-height: 500px;
-  margin: 3em auto;
+  margin: auto auto;
   background-color: #1d2549;
   font-family: 'Codec Pro', sans-serif;
   font-size: 50px;
@@ -16,45 +21,30 @@ body {
 h1 {
   text-align: center;
   color: #fff;
-  padding-bottom: 50px;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   font-family: 'Codec Pro', sans-serif;
   font-size: 50px;
-  
-
-}
-h1 i {
-  position: relative;
-  font-size: 50px;
-  font-family: 'Codec Pro', sans-serif;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  margin-bottom: 2em;
 }
 
 p {
-  text-align: left;
+  text-align: center;
   color: #fff;
   font-size: 20px;
   margin-bottom: 2em;
   line-height: 30px;
 }
-p img {
-  position: relative;
-  top: 8px;
-  right: 10px;
-}
 
 span {
-  display: block;
-  margin-top: -16px;
-  margin-left: 28px;
-  /*color: red;*/
+  position: relative;
+  z-index: 2;
+  transition: background .3s ease-out;
 }
 
-.aoyue-select {
+.ccb-select {
   position: relative;
   overflow: hidden;
   display: block;
-  
   width: auto;
   height: auto;
   border-bottom: 0px;
@@ -63,34 +53,34 @@ span {
   font-size: 20px;
   box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
 }
-.aoyue-select:not(:hover) > i.toggle.icon-arrow-down {
+.ccb-select:not(:hover) > i.toggle.icon-arrow-down {
   display: block !important;
 }
-.aoyue-select:not(:hover) > i.toggle.icon-arrow-up {
+.ccb-select:not(:hover) > i.toggle.icon-arrow-up {
   display: none !important;
 }
-.aoyue-select:not(:hover) label.option > input:not(:checked) ~ span.title {
+.ccb-select:not(:hover) label.option > input:not(:checked) ~ span.title {
   display: none !important;
 }
-.aoyue-select > i.toggle {
+.ccb-select > i.toggle {
   position: absolute;
   z-index: 4;
   right: 1.5em;
   top: 1.6em;
   color: #ccc;
 }
-.aoyue-select .title,
-.aoyue-select .placeholder {
+.ccb-select .title,
+.ccb-select .placeholder {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
-  padding: 1.5em 2em;
+  padding: 1.8em 1.8em;
   background: white;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
-.aoyue-select > input {
+.ccb-select > input {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -101,31 +91,31 @@ span {
   opacity: 0;
   cursor: pointer;
 }
-.aoyue-select > input:checked ~ i.toggle.icon-arrow-down {
+.ccb-select > input:checked ~ i.toggle.icon-arrow-down {
   display: none;
 }
-.aoyue-select > input:checked ~ i.toggle.icon-arrow-up {
+.ccb-select > input:checked ~ i.toggle.icon-arrow-up {
   display: block;
 }
-.aoyue-select > input:checked div.options label.option .title {
+.ccb-select > input:checked div.options label.option .title {
   display: none !important;
 }
-.aoyue-select > input:not(:checked) {
+.ccb-select > input:not(:checked) {
   z-index: 4;
 }
-.aoyue-select > input:not(:checked) ~ label.option > span.title {
+.ccb-select > input:not(:checked) ~ label.option > span.title {
   display: none;
 }
-.aoyue-select > input:not(:checked) ~ i.toggle.icon-arrow-up {
+.ccb-select > input:not(:checked) ~ i.toggle.icon-arrow-up {
   display: none;
 }
-.aoyue-select > input:not(:checked) ~ i.toggle.icon-arrow-down {
+.ccb-select > input:not(:checked) ~ i.toggle.icon-arrow-down {
   display: block;
 }
-.aoyue-select > input:disabled {
+.ccb-select > input:disabled {
   cursor: no-drop;
 }
-.aoyue-select > span.placeholder {
+.ccb-select > span.placeholder {
   position: relative;
   z-index: 0;
   display: inline-block;
@@ -133,32 +123,27 @@ span {
   color: #999;
   border-top: 0px;
 }
-.aoyue-select label.option {
+.ccb-select label.option {
   display: block;
   overflow: hidden;
   z-index: 1;
   width: 100%;
   transition: all 1s ease-out;
 }
-.aoyue-select label.option span.title {
-  position: relative;
-  z-index: 2;
-  transition: background .3s ease-out;
-  color: blue;
-}
-.aoyue-select label.option span.title i.icon {
+
+.ccb-select label.option span.title i.icon {
   padding-right: 8px;
   color: #92a8d1;
 }
-.aoyue-select label.option span.title:hover {
+.ccb-select label.option span.title:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.aoyue-select label.option input {
+.ccb-select label.option input {
   display: none;
 }
-.aoyue-select label.option input:checked ~ span.title {
+.ccb-select label.option input:checked ~ span.title {
   position: absolute;
   display: block;
   z-index: 3;
@@ -171,11 +156,11 @@ span {
   color: inherit;
   width: 100%;
 }
-.aoyue-select label.option input:disabled ~ span.title {
+.ccb-select label.option input:disabled ~ span.title {
   background: #f9f9f9 !important;
   color: #aaa;
 }
-.aoyue-select label.option input:disabled ~ span.title:hover {
+.ccb-select label.option input:disabled ~ span.title:hover {
   color: #aaa;
   background: none;
   cursor: no-drop;
@@ -197,7 +182,11 @@ span {
 
 .cover .btn-lg {
   padding: 10px 20px;
-  
+}
+
+span.title .cover {
+ width: 80%;
+ color: #1d2549;
 }
 
 
@@ -222,14 +211,37 @@ a:active {
 .site-wrapper {
   display: table;
   width: 100%
-  
+ 
 }
 .site-wrapper-inner {
   display: table-cell;
   resize: vertical;
 }
 .cover-container {
-  margin: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+   .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .cover-container {
+    width: 700px;
+  }
 }
 
 

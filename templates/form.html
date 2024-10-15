@@ -1,413 +1,518 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   <head>
 
-  <title>Classy Form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Classy Form</title>
     <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename ='style_form.css')}}">
+    
+   </head>
 
+   <body>
 
+     <div class="site-wrapper">
+       <div class="site-wrapper-inner">
+         <div class="cover-container">
+           <h1 class="animated fadeInDown"><i class="icon icon-arrow-down"></i></h1>
+           <h1 class="animated rotateIn">answer the questions</h1>
+    
+           <!-- The questions for a user to choose one option from the list -->
 
-</head>
+           <form name="myForm" action="" method="post" onsubmit="">
+           <p>Are you into thick books which take years to read but make you proud of  your persistence?</p>
+             
+             <!-- The list of options -->
 
-<body>
+             <div class="ccb-select animated zoomIn">
+               <input type="radio" name="option1">
+               <i class="toggle icon icon-arrow-down"></i>
+               <i class="toggle icon icon-arrow-up"></i>
+               <span class="placeholder">Choose...</span>
+               <label class="option">
+                 <input type="radio" name="option1" id="option1" value="1">
+                   <span class="title animated fadeIn">
+	             <div class="cover">it depends on a book</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option1" id="option2" value="2">
+                   <span class="title animated fadeIn cover">
+                     <div class="cover">yes, because I like to stand out and be the smartest person in the room</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option1" id="option3" value="3">
+                   <span class="title animated fadeIn">
+	             <div class="cover">yes, because I like to be engrossed in reading a good book as long as possible</div>
+                   </span>
+                </label>
+                <label class="option">
+                  <input type="radio" name="option1" id="option4" value="4">
+                    <span class="title animated fadeIn">
+                      <div class="cover">no, I like dynamic plots and narration</div>
+                    </span>
+                 </label>
+             </div>
+             <br>
 
-<div class="site-wrapper">
+           <p>Are you struggling to find the love of your life?</p>
 
-      <div class="site-wrapper-inner">
+             <!-- The list of options -->
 
-        <div class="cover-container">
+             <div class="ccb-select animated zoomIn">
+               <input type="radio" name="option2">
+               <i class="toggle icon icon-arrow-down"></i>
+               <i class="toggle icon icon-arrow-up"></i>
+               <span class="placeholder">Choose...</span>
+               <label class="option">
+                 <input type="radio" name="option2" id="option1" value="1">
+                   <span class="title animated fadeIn">
+                     <div class="cover">no, because who needs love when there are so many global issues out there</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option2" id="option2" value="2">
+                   <span class="title animated fadeIn">
+                     <div class="cover">yes, because my love should be ideal </div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option2" id="option3" value="3">
+                   <span class="title animated fadeIn">
+                     <div class="cover">yes, because I struggle to define the criteria of love</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option2" id="option4" value="4">
+                   <span class="title animated fadeIn">
+                     <div class="cover">no, I am all good in this department </div>
+                   </span>
+               </label>
+             </div>
+             <br>
 
+           <p>Are you concerned that your life might turn out purposless?</p>
 
-<h1 class="animated fadeInDown"><i class="icon icon-arrow-down"></i></h1>
+             <!-- The list of options -->
 
-<h1 class="animated rotateIn">answer the questions</h1>
-<form name="myForm" action="" method="post" onsubmit="">
-<p>are you into thick books which take years to read but make you proud of  your persistence?</p>
+             <div class="ccb-select animated zoomIn">
+               <input type="radio" name="option3">
+               <i class="toggle icon icon-arrow-down"></i>
+               <i class="toggle icon icon-arrow-up"></i>
+               <span class="placeholder">Choose...</span>
+               <label class="option">
+                 <input type="radio" name="option3" id="option1" value="1">
+                   <span class="title animated fadeIn">
+                     <div class="cover">yes, because it is difficult to pursue any purpose </div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option3" id="option2" value="2">
+                   <span class="title animated fadeIn">
+                     <div class="cover">yes, because I struggle to find a purpose </div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option3" id="option3" value="3">
+                   <span class="title animated fadeIn">
+                     <div class="cover">no, I found my purpose </div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option3" id="option4" value="4">
+                   <span class="title animated fadeIn">
+                     <div class="cover">no, I do not care </div>
+                   </span>
+               </label>
+             </div>
+             <br>
 
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option1">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option1" id="option1" value="1">
-      <span class="title animated fadeIn">it depends on a book</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option1" id="option2" value="2">
-      <span class="title animated fadeIn">yes because I like to stand out and be the smartest person in the room </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option1" id="option3" value="3">
-      <span class="title animated fadeIn">yes because I like to be engrossed in reading a good book as long as possible</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option1" id="option4" value="4">
-      <span class="title animated fadeIn">no I like dynamic plots and narration</span>
-    </label>
-</div>
+           <p>Do you feel that you are drowning in the routine?</p>
+
+             <!-- The list of options -->
+
+             <div class="ccb-select animated zoomIn">
+               <input type="radio" name="option4">
+               <i class="toggle icon icon-arrow-down"></i>
+               <i class="toggle icon icon-arrow-up"></i>
+               <span class="placeholder">Choose...</span>
+               <label class="option">
+                 <input type="radio" name="option4" id="option_1" value="1">
+                   <span class="title animated fadeIn">
+                     <div class="cover">no, I hate routine and do everything to escape it</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option4" id="option2" value="2">
+                   <span class="title animated fadeIn">
+                     <div class="cover">yes, and I do everything to escape it</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option4" id="option3" value="3">
+                   <span class="title animated fadeIn">
+                     <div class="cover">I am ok with routine</div>
+                   </span>
+               </label>
+               <label class="option">
+                 <input type="radio" name="option4" id="option4" value="4">
+                   <span class="title animated fadeIn">
+                     <div class="cover">routine makes our lives safer</div>
+                   </span>
+               </label>
+             </div>
+             <br>
+
+             <p>Can referring to religion help with modern issues?</p>
+ 
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option5">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option5" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, religion is outdated </div>
+                     <span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option5" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, religions provide universal truth </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option5" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I have never thought about it </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option5" id="option4" value="4">
+                   <span class="title animated fadeIn">
+                     <div class="cover">sometimes</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Do you want to be perceived as more outstanding and special?</p>
+             
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option6">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option6" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes,  because I am special</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option6" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, there is nothing special about me</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option6" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t care what others think</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option6" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I don`t need it </div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Do you struggle to fulfil yourself?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option7">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option7" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I feel fulfilled or I am on my way</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option7" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because society does not allow me to fulfil myself</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option7" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I have never thought about it </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option7" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because I am not lucky enough</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Are you concerned with the level of random and unmotivated violence in the world?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option8">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option8" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I accept this </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option8" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I believe that bad deeds are done on purpose </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option8" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, it scares me</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option8" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t care</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Are you concerned with inequality in the world?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option9">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option9" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, there is no inequality</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option9" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, inequality is normal</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option9" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, inequality is a problem</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option9" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t care</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Do you struggle to be accepted by the society?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option10">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option10" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because I am better than them</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option10" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because I am different from them </div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option10" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, people like me</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option10" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I have never thought about it </div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Do you suffer from loneliness?</p>
+
+               <!-- The list of options -->
+
+              <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option11">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option11" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because it is hard to meet your people</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option11" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes because it is hard to establish good relations</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option11" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option11" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t need people </div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Do you like reading random facts about animals?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option12">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option12" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, I am a fan of fluffy donkeys and chubby whales</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option12" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, insects are more interesting</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option12" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t care</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option12" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I am into birds</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+             <p>Would you like to improve your relationship with your family?</p>
+
+               <!-- The list of options -->
+
+               <div class="ccb-select animated zoomIn">
+                 <input type="radio" name="option13">
+                 <i class="toggle icon icon-arrow-down"></i>
+                 <i class="toggle icon icon-arrow-up"></i>
+                 <span class="placeholder">Choose...</span>
+                 <label class="option">
+                   <input type="radio" name="option13" id="option_1" value="1">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because I feel that they perceive me as a social function, not a human</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option13" id="option2" value="2">
+                     <span class="title animated fadeIn">
+                       <div class="cover">no, I have an amazing family</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option13" id="option3" value="3">
+                     <span class="title animated fadeIn">
+                       <div class="cover">yes, because they don`t understand me</div>
+                     </span>
+                 </label>
+                 <label class="option">
+                   <input type="radio" name="option13" id="option4" value="4">
+                     <span class="title animated fadeIn">
+                       <div class="cover">I don`t care about them</div>
+                     </span>
+                 </label>
+               </div>
+               <br>
+
+               <div class="inner cover">
+	         <h1>
+    	           <input type="submit" value="submit" class="btn-lg btn-default">
+	         </h1>
+               </div>
+           </form>
+
+<br>
+<br>
 <br>
 
+         </div>
+       </div>
+     </div>
 
-<p>are you struggling to find the love of your life?</p>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option2">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option2" id="option1" value="1">
-      <span class="title animated fadeIn">no, because who needs love when there are so many global issues out there</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option2" id="option2" value="2">
-      <span class="title animated fadeIn">yes, because my love should be ideal </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option2" id="option3" value="3">
-      <span class="title animated fadeIn">yes, because I struggle to define the criteria of love</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option2" id="option4" value="4">
-      <span class="title animated fadeIn">no, I am all good in this department </span>
-    </label>
-</div>
-<br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
 
-<p>are you concerned that your life might turn out purposless?</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option3">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option3" id="option1" value="1">
-      <span class="title animated fadeIn">yes, because it is difficult to pursue any purpose </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option3" id="option2" value="2">
-      <span class="title animated fadeIn">yes, because I struggle to find a purpose </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option3" id="option3" value="3">
-      <span class="title animated fadeIn">no, I found my purpose </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option3" id="option4" value="4">
-      <span class="title animated fadeIn">no, I do not care</span>
-    </label>
-</div>
-<br>
-
-<p>do you feel that you are drowning in the routine?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option4">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option4" id="option_1" value="1">
-      <span class="title animated fadeIn">no, I hate routine and do everything to escape it</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option4" id="option2" value="2">
-      <span class="title animated fadeIn">yes, and I do everything to escape it</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option4" id="option3" value="3">
-      <span class="title animated fadeIn">I am ok with routine</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option4" id="option4" value="4">
-      <span class="title animated fadeIn">routine makes our lives safer</span>
-    </label>
-</div>
-<br>
-
-
-
-<p>can referring to religion help with modern issues?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option5">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option5" id="option_1" value="1">
-      <span class="title animated fadeIn">no, religion is outdated </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option5" id="option2" value="2">
-      <span class="title animated fadeIn">yes, religions provide universal truth </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option5" id="option3" value="3">
-      <span class="title animated fadeIn">I have never thought about it </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option5" id="option4" value="4">
-      <span class="title animated fadeIn">sometimes</span>
-    </label>
-</div>
-<br>
-
-
-
-<p>do you want to be perceived as more outstanding and special?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option6">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option6" id="option_1" value="1">
-      <span class="title animated fadeIn">yes,  because I am special</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option6" id="option2" value="2">
-      <span class="title animated fadeIn">no, there is nothing special about me</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option6" id="option3" value="3">
-      <span class="title animated fadeIn">I don`t care what others think</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option6" id="option4" value="4">
-      <span class="title animated fadeIn">no, I don`t need it </span>
-    </label>
-</div>
-<br>
-
-
-
-
-<p>do you struggle to fulfil yourself?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option7">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option7" id="option_1" value="1">
-      <span class="title animated fadeIn">no, I feel fulfilled or I am on my way</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option7" id="option2" value="2">
-      <span class="title animated fadeIn">yes, because society does not allow me to fulfil myself</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option7" id="option3" value="3">
-      <span class="title animated fadeIn">I have never thought about it </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option7" id="option4" value="4">
-      <span class="title animated fadeIn">yes, because I am not lucky enough</span>
-    </label>
-</div>
-<br>
-
-
-<p>are you concerned with the level of random and unmotivated violence in the world?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option8">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option8" id="option_1" value="1">
-      <span class="title animated fadeIn">no, I accept this </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option8" id="option2" value="2">
-      <span class="title animated fadeIn">no, I believe that bad deeds are done on purpose </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option8" id="option3" value="3">
-      <span class="title animated fadeIn">yes, it scares me</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option8" id="option4" value="4">
-      <span class="title animated fadeIn">I don`t care</span>
-    </label>
-</div>
-<br>
-
-<p>are you concerned with inequality in the world?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option9">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option9" id="option_1" value="1">
-      <span class="title animated fadeIn">no, there is no inequality</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option9" id="option2" value="2">
-      <span class="title animated fadeIn">no, inequality is normal</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option9" id="option3" value="3">
-      <span class="title animated fadeIn">yes, inequality is a problem</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option9" id="option4" value="4">
-      <span class="title animated fadeIn">I don`t care</span>
-    </label>
-</div>
-<br>
-
-<p>do you struggle to be accepted by the society?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option10">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option10" id="option_1" value="1">
-      <span class="title animated fadeIn">yes, because I am better than them</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option10" id="option2" value="2">
-      <span class="title animated fadeIn">yes, because I am different from them </span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option10" id="option3" value="3">
-      <span class="title animated fadeIn">no, people like me</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option10" id="option4" value="4">
-      <span class="title animated fadeIn">I have never thought about it </span>
-    </label>
-</div>
-<br>
-
-<p>do you suffer from loneliness?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option11">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option11" id="option_1" value="1">
-      <span class="title animated fadeIn">yes, because it is hard to meet your people</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option11" id="option2" value="2">
-      <span class="title animated fadeIn">yes because it is hard to establish good relations</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option11" id="option3" value="3">
-      <span class="title animated fadeIn">no</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option11" id="option4" value="4">
-      <span class="title animated fadeIn">I don`t need people </span>
-    </label>
-</div>
-<br>
-
-
-<p>do you like reading random facts about animals?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option12">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option12" id="option_1" value="1">
-      <span class="title animated fadeIn">yes, I am a fan of fluffy donkeys and chubby whales</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option12" id="option2" value="2">
-      <span class="title animated fadeIn">no, insects are more interesting</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option12" id="option3" value="3">
-      <span class="title animated fadeIn">I don`t care</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option12" id="option4" value="4">
-      <span class="title animated fadeIn">no, I am into birds</span>
-    </label>
-</div>
-<br>
-
-<p>would you like to improve your relationship with your family?</p>
-
-<div class="aoyue-select animated zoomIn">
-    <!-- You can toggle select (disabled) -->
-    <input type="radio" name="option13">
-    <i class="toggle icon icon-arrow-down"></i>
-    <i class="toggle icon icon-arrow-up"></i>
-    <span class="placeholder">Choose...</span>
-    <label class="option">
-      <input type="radio" name="option13" id="option_1" value="1">
-      <span class="title animated fadeIn">yes, because I feel that they perceive me as a social function, not a human</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option13" id="option2" value="2">
-      <span class="title animated fadeIn">no, I have an amazing family</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option13" id="option3" value="3">
-      <span class="title animated fadeIn">yes, because they don`t understand me</span>
-    </label>
-    <label class="option">
-      <input type="radio" name="option13" id="option4" value="4">
-      <span class="title animated fadeIn">I don`t care about them</span>
-    </label>
-</div>
-<br>
-
-<div class="inner cover">
-	<h1>
-    	<input type="submit" value="submit" class="btn-lg btn-default">
-	</h1>
-</div>
-</form>
-
-<br>
-<br>
-<br>
-
-
-</div>
-</div>
-</div>
-
-
-<!-- partial -->
-  <script src="{{ url_for('static', filename='js/script2.js') }}"></script>
-
-</body>
+   </body>
 </html>
