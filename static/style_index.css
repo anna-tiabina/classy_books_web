@@ -1,42 +1,3 @@
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #1d2549;
-  background-color: #bdf347;
-  border: 1px solid #bdf347;
-  font-family: 'Codec Pro', sans-serif;
-  font-size: 20px;
-  border-radius: 0px;
-  text-align: center;
-  animation: 2s anim-lineUp ease-out;
-}
-
-
-a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
-
 
 /*
  * Base structure
@@ -53,15 +14,27 @@ body {
   text-align: center;
 }
 
-
 .text_h1{
   font-family: 'Codec Pro', sans-serif;
-  font-size: 110px;
+  font-size: 100px;
   color: #bdf347;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
   animation: 2s anim-lineUp ease-out;
 }
+
+.text_lead{
+  font-family: 'Codec Pro', sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-size: 20px;
+  animation: 2s anim-lineUp ease-out;
+}
+
+
+/* Animation */
+
 @keyframes anim-lineUp {
   0% {
     opacity: 0;
@@ -79,19 +52,6 @@ body {
     transform: translateY(0%);
   }
 }
-
-
-.text_lead{
-  font-family: 'Codec Pro', sans-serif;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  font-size: 20px;
-  animation: 2s anim-lineUp ease-out;
-}
-
-.preview{
-text-align: right;}
 
 .animation {
   height:60px;
@@ -135,6 +95,7 @@ text-align: right;}
   
 }
 
+
 @keyframes text-animation {
   0% {margin-top: 0;}
   10% {margin-top: 0;}
@@ -147,12 +108,6 @@ text-align: right;}
   90% {margin-top: 0;}
   100% {margin-top: 0;}
 }
-
-
-
-
-
-
 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -237,14 +192,38 @@ text-align: right;}
   
 }
 
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #1d2549;
+  background-color: #bdf347;
+  border: 1px solid #bdf347;
+  font-family: 'Codec Pro', sans-serif;
+  font-size: 20px;
+  border-radius: 0px;
+  text-align: center;
+  animation: 2s anim-lineUp ease-out;
+}
 
-/*
- * Footer
- */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
 }
 
 

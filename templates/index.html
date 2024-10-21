@@ -4,72 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
     <meta name="description" content="">
     <meta name="author" content="">
-   
-    
-
     <title>Cover</title>
      <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet">
-
-     <link rel="stylesheet" href="{{url_for('static', filename ='style_index.css')}}">
-
-   
+     <link rel="stylesheet" href="{{url_for('static', filename ='style_index.css')}}"> 
   </head>
 
   <body>
 
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
-
           <div class="masthead clearfix">
-            <div class="inner">
-             
+            <div class="inner">       
+              <!-- The header -->   
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="http://127.0.0.1:5000/">Home</a></li>
-                  <li><a href="http://127.0.0.1:5000/about_project">About us</a></li>
-                  <li><a href="http://127.0.0.1:5000/contacts">Contacts</a></li>
+                  <li><a href="{{url_for('index')}}">Home</a></li>
+                  <li><a href="{{url_for('about_project')}}">About us</a></li>
+                  <li><a href="{{url_for('contacts')}}">Contacts</a></li>
                 </ul>
               </nav>
             </div>
           </div>
-
+          <!-- The headline and the button -->
           <div class="inner cover">
             <h1 class="text_h1">Classy Book</h1>
-            <p class="text_lead">
-             ask the ML to choose a book which
-<section class="animation">
-    <div class="first"><div>entertains</div></div>
-    <div class="second"><div>inspires</div></div>
-    <div class="third"><div>consoles</div></div>
-  </section>
-
-</p>
-<br>
-
-            <p class="lead">
-              <a href="http://127.0.0.1:5000/form" class="btn btn-lg btn-default">explore</a>
+            <p class="text_lead">ask the ML to choose a book which
+              <section class="animation">
+                <div class="first"><div>entertains</div></div>
+                <div class="second"><div>inspires</div></div>
+                <div class="third"><div>consoles</div></div>
+              </section>
             </p>
-          </div>
-
-          
+            <br>
+            <p class="lead">
+              <a href="{{url_for('form')}}" class="btn btn-lg btn-default">explore</a>
+            </p>
+          </div>        
         </div>
-
       </div>
-
     </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-</body>
+  </body>
 </html>

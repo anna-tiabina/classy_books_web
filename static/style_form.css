@@ -227,14 +227,16 @@ a:active {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
   /* Handle the widths */
    .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    margin-right: 30px;
+    margin-left: 30px;
+
   }
 }
 
