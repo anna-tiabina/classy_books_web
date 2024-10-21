@@ -15,9 +15,7 @@ COPY classifier.pickle /app/
 COPY ML_algorithm_CCB.py /app/
 COPY test_pytest.py /app/
 COPY test_unittest.py /app/
-COPY __pycache__ /app/__pycache__
 COPY static /app/static
-COPY env /app/env
 COPY templates /app/templates
 COPY README.md /app/
 
